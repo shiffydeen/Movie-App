@@ -21,7 +21,7 @@ function App() {
     try {
       const response = await axios.get('/trending/all/week')
       dispatch(setBannerData(response.data.results))
-      // console.log('response', response.data.results)
+      console.log('response', response.data.results)
     } catch (error) {
       console.log("error", error)
     }
@@ -30,6 +30,7 @@ function App() {
   const fetchConfiguration = async () => {
     try {
       const response = await axios.get("/configuration")
+      console.log(response)
       dispatch(setImageURL(response.data.images.secure_base_url+"original"))
     } catch (error) {
       
