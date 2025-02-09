@@ -8,7 +8,7 @@ const Footer = () => {
         <Link to="/">About</Link>
         <Link to="/">Contact</Link>
       </div>
-      <p className='text-sm'>Created by Dynamic Coding with Amit</p>
+      <p className='text-sm'>Created by ShiffyCodes</p>
     </footer>
   )
 }
